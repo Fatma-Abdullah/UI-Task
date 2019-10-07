@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* -----------header----------- */
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    border-bottom:1 solid gray;
+    direction: rtl;
+    box-shadow:3px 3px 5px 0px #ccc;
+
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+  }
+  .topnav i{
+    color: #0098fb
+  }
+  .topnav a:hover {
+    color: rgb(32, 138, 204);
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .topnav a:not(:first-child) {
+      float: right;
+  }
+  /* .topnav a:first-child{
+    float: left;
+} */
+  
+  .topnav .icon {
+    display: none;
+  }
+ 
+  /* ----------content---------- */
+  .container{
+      padding: 50px;
+  }
+.col-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  .colp-6 {
+    float: left;
+    width: 49% !important;
+    margin-right:1%;
+  }
+  .col-6:last-child {
+    margin-right: 0px;
+}
+  .col-4 {
+    float: left;
+    width: 31% !important;
+    margin-right: 3%;
+  }
+  .col-4:last-child {
+    margin-right: 0px;
+}
+  .col-9{
+    float: left;
+    width: 60% !important;
+  }
+  .col-3{
+      float: right;
+    width: 40% !important;
+    padding: 32px
+  }
+  .freeShipping .col-3{
+  padding: 0 !important;
+  padding-left: 30px !important;
+
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.mainForm h5 span{
+    font-weight: initial;
+}
+.mainForm img{
+    margin-top: 20px;
+    height: 40px;
+    width: 140px;
+}
+  /* ------------or line------- */
+  .form-or {
+    position: relative;
+    font-size: 18px;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+  }
+  .hr-or {
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+/* -----------form fields------------------ */
+input[type=text],[type=email],  select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #0098fb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold
+  }
+  
+  input[type=submit]:hover {
+    background-color: #0b8be0;
+  }
+  .HeadLine{
+      font-size: 20px;
+  }
+
+.afterChb{
+    margin-top: 30px;
+}
+form{
+    color: #464647;
+}
+.returnClick{
+    color: #0098fb;
+    text-decoration: none;
+    font-size:100%
+}
+/* -----------------shipping details--------------- */
+.details{
+    float: right;
+}
+.details .col-9 {
+    display: flex;
+}
+.details .col-9 .title{
+    font-size: 60%;
+    align-self: center
+}
+
+.details .col-3 .price{
+    font-weight: bold; 
+    font-size: 15px;
+    margin-top: 30px;
+}
+.details .oldPrice{
+    text-decoration: line-through;
+}
+hr{
+    margin:10px
+}
+.row .col-9 p{
+    margin-left: 10px
+}
+.freeShipping{
+    margin-top: 10px
+}
+.totalPrice{
+    font-size:20px;
+    font-weight: bold;
+}
+.redTitle{
+    font-weight: bold;
+    font-size: 18px; 
+    color: red
+}
+.para{
+    font-weight: bold;
+    font-size: 16px
+}
+.stock{
+    padding-left: 30px;
+}
+.blackTxt{
+  color: black
+}
+.afterChb input{
+  float: right;
+}
+/* ----------footer----------- */
+footer{
+	padding:30px 0;
+	background-color: #222222;
+    text-transform: uppercase;
+    font-size: 50%;
+    font-weight:bold;
+    text-align: center;
+}
+footer a{
+    margin-left: 8px;
+    color: white !important;
+    text-decoration: none
+}
+.icons{
+    margin-top: 20px;
+font-size: 15px
+}
+.copyRights{
+    margin-top: 20px;
+
+}
+.copyRights span{
+    color: white;
+    font-size: 80%;
+    font-weight: initial;
+}
+.copyRights a{
+    color: #0098fb !important;
+    padding: 0 !important;
+    margin: 0 !important
+}
+@media only screen and (max-width: 1440px) and (min-width: 320px) {
+  html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+  .returnClick{
+    font-size:80%
+}
+footer{
+  font-size: 80%
+}
+.colp-6 {
+  width: 49% !important;
+}
+}
+  @media only screen and (max-width: 768px) and (min-width: 320px) {
+    .col-6 {
+		width: 100%; 
+	}
+  .paypalLogo{
+    width: 100% !important
+  }
+  footer{
+    font-size: 60%
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* -----------------error------------ */
+.error{
+  color: red;
+  display: block;
+  margin: 10px 0
+}
+  @media only screen and (max-width: 425px) and (min-width: 320px) {
+  
+.container {
+  padding: 0;
+}
+.stock {
+  padding-left: 5px;
+}
+.redTitle{
+  font-size: 73%; 
+}
+.para{
+  font-size: 64%
+}
+footer{
+  font-size: 54%
+}
+}
+@media only screen and (max-width: 320px) {
+footer{
+  font-size: 45%
+}
+}

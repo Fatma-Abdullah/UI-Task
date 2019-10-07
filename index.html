@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PayPal</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- -----------header----------- -->
+
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#">PETLAB</a>
+            <a href="#">HOME</a>
+            <a href="#">SHIPPING</a>
+            <a href="#">BILLING</a>
+            <a href="#">RECEIPT</a>
+            <a><i class='fas fa-cart-plus'></i></a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- -----------content----------- -->
+    <div class="container">
+        <div class="row">
+                <div class="col-6 details">
+                        <div class="row">
+                            <div class="col-9">
+                                <img src="./images/seeds1.jpg">
+                                <span class="title"> Pet Lab - Joint Health Tub (Subscribtion)</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="price"><span class="oldPrice">$35</span> $31</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-9">
+                                <img src="./images/gift1.jpg">
+                                <span class="title"> Extra chance to win $2.000 of products</span>
+                            </div>
+                            <div class="col-3">
+                                <span class="price">Free</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row freeShipping">
+                            <div class="col-9">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="col-3">
+                                <span class="price">$75.97</span>
+                            </div>
+                        </div>
+                        <div class="row freeShipping">
+                            <div class="col-9">
+                                <p>Shipping</p>
+                            </div>
+                            <div class="col-3">
+                                <span class="price">Free</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row freeShipping">
+                            <div class="col-9">
+                                <p>Total</p>
+                            </div>
+                            <div class="col-3">
+                                <span class="totalPrice">$75.9</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="stock">
+                            <span class="redTitle">STOCK UPDATE:</span>
+                            <span class="para">
+                                Due to extreme demand shipping times may be extended: Predicted Shipping date -
+                                7th August
+                            </span>
+                        </div>
+            </div>
+
+            <div class="col-6 mainForm">
+                <h5>Customer information > <span>Payment method</span></h5>
+                <img src="./images/paypal - Copy.png" class="paypalLogo">
+
+                <div class="form-or">
+                    <hr class="hr-or">
+                    <span class="span-or">or</span>
+                </div>
+
+                <form action="" method="post" id="myform">
+                    <p class="HeadLine">Contact Infomation</p>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+
+                    <input type="checkbox" name="chb" id="chb"> Keep me up to date on news and exclusive offers
+                    <p class="HeadLine afterChb">Shipping Address</p>
+                    <div class="row">
+                        <input type="text" class="colp-6" id="fname" name="firstname" placeholder="First name">
+                        <input type="text" class="colp-6" id="lname" name="lastname" placeholder="Last name">
+                    </div>
+                    <input type="text" id="Address" name="Address" placeholder="Address">
+                    <input type="text" id="apt" name="apt" placeholder="Apt, suite, etc. (optional)">
+                    <input type="text" id="city" name="city" placeholder="City">
+
+                    <div class="row">
+                        <select id="country" name="country" class="col-4">
+                            <option value="australia">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <select id="country" name="country" class="col-4">
+                            <option value="australia">Select State</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <input type="text" id="zCode" name="zCode" placeholder="Zip Code" class="col-4">
+                    </div>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>
+                    <div class="row">
+                        <input type="checkbox" name="chb" id="chb" required>
+                        <span class="blackTxt"> I agree to the</span> <span>Terms of Use and Conditions of Sale -
+                            Privacy Policy</span>
+                    </div>
+                    <div class="row afterChb">
+                        <input type="submit" class="col-6" value="Continue to payment method">
+                        <a href="#" class="col-6 returnClick">
+                            < Return To Package Selection</a> 
+                        </div> 
+                    </form> 
+                </div> 
+               
+            </div>
+        </div>
+        <!--------------footer ---------- -->
+        <footer>
+            <div class="Links">
+                <a href="#">home</a>
+                <a href="#">shipping & return</a>
+                <a href="#">contact us</a>
+                <a href="#">privacy</a>
+                <a href="#">Terms & conditions</a>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyRights">
+                <span>
+                    2019 &copy; <a href="#">www.Thepetlabco.com</a> | All Rights Reserved
+                </span>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+        <script src="./js/main.js"></script>
+
+</body>
+
+</html>
